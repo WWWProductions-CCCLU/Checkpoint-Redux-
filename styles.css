@@ -1,0 +1,101 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+/* App container */
+#root {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Task form */
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+button[type="submit"] {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Task list */
+div.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+div.task.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Task actions */
+.task button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task button.edit {
+  background-color: #ffcc00;
+  color: white;
+}
+
+.task button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.task button.complete {
+  background-color: #4caf50;
+  color: white;
+}
+
+.task button.edit:hover {
+  background-color: #e6b800;
+}
+
+.task button.delete:hover {
+  background-color: #e53935;
+}
+
+.task button.complete:hover {
+  background-color: #45a049;
+}
